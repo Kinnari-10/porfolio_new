@@ -10,7 +10,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="apple-touch-icon.png">
     <link rel="manifest" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+ 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (max-width:500px)" href="phone.css">
@@ -19,56 +24,14 @@
     <style>
 body{
     background-image: url(img1.jpeg);
-    background-position:fixed;
+    background-position:0px;
     background-repeat: repeat;
     background-size: cover;
     position: relative;
     min-height: 300px;
 }
-.styled-table {
-    
-    border-collapse: separate;
-    margin: 35px;
-    font-size: 1em;
-    font-family: century;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgb(40, 38, 38);
-    
-}
 
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-.styled-table th,
-.styled-table td {
-    padding: 10px 10px;
-    
-}
-.styled-table tbody tr {
-    border-radius: 50px;
-    border-bottom: 1px solid #dddddd;
-}
 
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f8a3a3;
-}
-.styled-table tbody tr:nth-of-type(odd) {
-    background-color: #2aa54f;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #08197c;
-}
-th{
-    background-color: #472a41;
-    border-radius: 8px;
-}
 
       h1 {
         font-family: "century";
@@ -93,83 +56,96 @@ th{
     <h1 class="headings">My Achievments</h1>
     <h1 class="headings">Certificate</h1>
 
-   <center> <table class="styled-table"></center>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Name</th>
-                <th>Level/Type</th>
-                <th>Platform</th>
-                <th>Certificate</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="active-row">
-                <td>1</td>
-                <td>profile</td>
-                <td>-</td>
-                <td>Hackrrank</td>
-                <td><a href="https://www.hackerrank.com/kinnaridholakiy1?hr_r=1" target="_blank">Click here</a></td>
-            </tr>
-            <tr class="active-row">
-                <td>2</td>
-                <td>internship</td>
-                <td>web development</td>
-                <td>Oasis InfoByte</td>
-                <td><a href="oasis cert.pdf" target="_blank">Certificate</a></td>
-            </tr>
-            <tr class="active-row">
-                <td>3</td>
-                <td>internship</td>
-                <td>Webdevelopment</td>
-                <td>LetsGrowmore</td>
-                <td><a href="lgm cert.pdf" target="_blank">Certificate</a></td>
-            </tr>
-    
-            <tr class="active-row">
-                <td>4</td>
-                <td>Results</td>
-                <td>College</td>
-                <td>GTU,Schhol</td>
-                <td><a href="result.html"  target="_blank">Certificate</a></td>
-            </tr> 
-             
-            <tr  class="active-row">
-                <td>5</td>
-                <td>CSS</td>
-                <td>-</td>
-                <td>Hackerrank</td>
-                <td><a href="https://www.hackerrank.com/certificates/49ea0c2858f4">Certificate</a></td>
-            </tr>
-            <tr class="active-row">
-                <td>6</td>
-                <td>Leadership/Volunteer</td>
-                <td>College</td>
-                <td>Student of the day</td>
-                <td><a href="volunteer.jpeg">Certificate</a></td>
-            </tr>
-            <tr  class="active-row">
-                <td>7</td>
-                <td>Tech-Dantay</td>
-                <td>college GDSC</td>
-                <td>Coding Compition</td>
-                <td><a href="techdantay.jpeg">Certificate</a></td>
-            </tr>
-            <tr class="active-row">
-                <td>8</td>
-                <td>internship</td>
-                <td>Web-development</td>
-                <td>CodeClause</td>
-                <td><a href="codecl cert.pdf">Certificate</a></td>
-            </tr>
-            <tr class="active-row">
-                <td>9</td>
-                <td>All Certifications</td>
-                <td>colege/National</td>
-                <td>-</td>
-                <td><a href="cert.html" target="_blank">Certificate</a></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Level/Type</th>
+                        <th scope="col">Platform</th>
+                        <th scope="col">Certificate</th>
+                    </tr>
+                </thead>
+                <tbody class="text-white">
+                    <tr>
+                        <td>1</td>
+                        <td>Profile</td>
+                        <td>-</td>
+                        <td>Hackerrank</td>
+                        <td><a href="https://www.hackerrank.com/kinnaridholakiy1?hr_r=1" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Internship</td>
+                        <td>Web Development</td>
+                        <td>Oasis InfoByte</td>
+                        <td><a href="oasis cert.pdf" target="_blank">Certificate</a></td>
+                    </tr>
+                  
+                    <tr>
+                        <td>3</td>
+                        <td>internship</td>
+                        <td>Webdevelopment</td>
+                        <td>LetsGrowmore</td>
+                        <td><a href="lgm cert.pdf" target="_blank">Certificate</a></td>
+                    </tr>
+            
+                    <tr >
+                        <td>4</td>
+                        <td>Results</td>
+                        <td>College</td>
+                        <td>GTU,Schhol</td>
+                        <td><a href="result.html"  target="_blank">Certificate</a></td>
+                    </tr> 
+                     
+                    <tr>
+                        <td>5</td>
+                        <td>CSS</td>
+                        <td>-</td>
+                        <td>Hackerrank</td>
+                        <td><a href="https://www.hackerrank.com/certificates/49ea0c2858f4">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Leadership/Volunteer</td>
+                        <td>College</td>
+                        <td>Student of the day</td>
+                        <td><a href="volunteer.jpeg">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Tech-Dantay</td>
+                        <td>college GDSC</td>
+                        <td>Coding Compition</td>
+                        <td><a href="techdantay.jpeg">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>internship</td>
+                        <td>Web-development</td>
+                        <td>CodeClause</td>
+                        <td><a href="codecl cert.pdf">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>All Certifications</td>
+                        <td>colege/National</td>
+                        <td>-</td>
+                        <td><a href="cert.html" target="_blank">Certificate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+  
+  
 </body>
 </html>
